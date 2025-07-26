@@ -1,0 +1,18 @@
+const questionBox = document.getElementById("questionBox");
+const feedback = document.getElementById("feedback");
+
+setTimeout(() => {
+  questionBox.classList.remove("hidden");
+}, 10000); // Muestra la pregunta después de 10 segundos
+
+function selectAnswer(index) {
+  questionBox.classList.add("hidden");
+
+  if (index === 1) {
+    feedback.innerHTML = "✅ ¡Correcto! Siempre debes detenerte para ceder el paso al peatón.";
+  } else {
+    feedback.innerHTML = "❌ Incorrecto. La prioridad es siempre del peatón.";
+  }
+
+  feedback.classList.remove("hidden");
+}
