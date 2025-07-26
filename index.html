@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simulador Test Autoescuela</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador Interactivo de Test Autoescuela</h1>
+    <div class="video-container">
+      <iframe width="100%" height="400" src="https://www.youtube.com/embed/t9RGEXyYO0A" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div id="questionBox" class="hidden">
+      <p id="questionText">¿Qué deberías hacer en esta situación?</p>
+      <ul>
+        <li><button onclick="selectAnswer(0)">A. Acelerar antes de que cruce el peatón</button></li>
+        <li><button onclick="selectAnswer(1)">B. Detenerte y ceder el paso</button></li>
+        <li><button onclick="selectAnswer(2)">C. Tocar el claxon para que se apure</button></li>
+      </ul>
+    </div>
+    <div id="feedback" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
